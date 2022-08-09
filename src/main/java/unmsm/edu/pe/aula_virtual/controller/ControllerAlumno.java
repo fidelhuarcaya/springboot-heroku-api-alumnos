@@ -24,6 +24,7 @@ public class ControllerAlumno {
     }
     @PostMapping
     private Alumno addAlumno(@RequestBody Alumno alumno){
+        System.out.println(alumno.toString());
         serviceAlumno.insertAlumno(alumno);
         return serviceAlumno.insertAlumno(alumno);
     }
